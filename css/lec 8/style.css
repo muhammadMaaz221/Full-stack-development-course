@@ -1,0 +1,17 @@
+/* element selector specificity is 1 */
+h1{
+    color: green;
+}
+/* class selector specificit is 10 */
+.yellow{
+    color: yellow;
+}
+
+/* class selector specificit is 10 */
+.cred{
+    color: red;
+}
+/* class selector specificit is 10 */
+.cpurple{
+    color: purple;
+}

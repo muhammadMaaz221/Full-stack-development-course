@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <style>
+     /* universal slector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    
+        .red {
+            background-color: pink;
+            color: black;
+        }
+
+        .green {
+            color: blue;
+            background-color: purple;
+        }
+
+
+        div p {
+            background-color: brown;
+            color: red;
+        }
+
+        /* pseudo selector */
+
+        a:visited{
+            color: teal;
+        }
+
+        a:link{
+            color: rebeccapurple;
+        }
+
+        a:active{
+            background-color: blue;
+        }
+
+        a:hover{
+            background-color: orange ;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="one">
+        <p>i am first</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">
+        i am anothe div
+        <article>
+            <p> i am another div</p>
+        </article>
+    </div>
+    <div class="green">
+        i am learning full-stack to be a good developer in future
+    </div>
+    <a href="https://google.com">Googel</a>
+    <a href="https://netflix.com">netflix</a>
+</body>
+
+</html>

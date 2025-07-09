@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+
+        .box::first-line{
+            color: blueviolet;
+        } */
+
+        /* .boxes * {
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* attribute slector */
+
+        /* [data-color=primary] {
+            margin-top: 34px;
+        } */
+
+        /* grouping selector */
+
+        /* p,a,.box,[data-color=primary] {
+            padding-top: 25px;
+        } */
+      /* even odd selector */
+      /* .box:nth-child(odd){
+        background-color: aqua;
+      } */
+     /* .box:nth-last-child(2){
+        background-color: chartreuse;
+     } */
+
+     .boxes::before{
+        content: "Maaz is good boy";
+        font-weight: bold;
+     }
+     .boxes::after{
+        content: "siga course is best";
+     }
+
+     .boxes::selection{
+        color: brown;
+        background-color: rgb(179, 118, 33);
+     }
+
+     .box::first-letter{
+        color: blueviolet;
+        text-transform:uppercase;
+        font-size: 25px;
+    
+     }
+  input::placeholder{
+    color: blue;
+    font-size: 12px;
+
+  }
+     
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am a box </div>
+        <div class="box">hy i am a box</div>
+        <div class="box">hy i am a box</div>
+    </div>
+       <input type="text" placeholder="Type your text here">
+</body>
+
+</html>
